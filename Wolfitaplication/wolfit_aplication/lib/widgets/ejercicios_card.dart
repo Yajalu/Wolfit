@@ -7,15 +7,18 @@ class EjerciciosCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final url = model.fieldsProto?.imagenEjercicio!.stringValue;
-    return Card(
-                 elevation: 7.0,
-                      child: ListTile(
-            
-                          leading: CircleAvatar(backgroundImage: NetworkImage(url.toString())),
-                          title: Text(model.fieldsProto!.nombreEjemplo!.stringValue.toString(), style: Theme.of(context).textTheme.headline4),
-                          subtitle: Text(model.fieldsProto!.descripcionEjercicio!.stringValue.toString(), style: Theme.of(context).textTheme.subtitle2),
-                          trailing: Icon(Icons.task_alt_sharp),
-                                  ),
-                    );
+    return SizedBox(
+      height: 60,
+      child: Card(
+                   elevation: 7.0,
+                        child: ListTile(
+              
+                            leading: CircleAvatar(backgroundImage: NetworkImage(url.toString())),
+                            title: Text(model.fieldsProto!.nombreEjemplo!.stringValue.toString(), style: Theme.of(context).textTheme.headline6),
+                            //subtitle: Text(model.fieldsProto!.descripcionEjercicio!.stringValue.toString(), style: Theme.of(context).textTheme.subtitle2),
+                            trailing: const Icon(Icons.arrow_forward_ios_outlined),
+                                    ),
+                      ),
+    );
   }
 }

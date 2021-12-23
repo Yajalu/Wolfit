@@ -24,7 +24,8 @@ class AppTheme {
 
   static final TextStyle _headLine2 = _headLine1.copyWith();
   static final TextStyle _headLine3 = _headLine2.copyWith();
-  static final TextStyle _headLine4 = _headLine3.copyWith();
+  static const TextStyle _headLine4 = 
+      TextStyle(fontFamily: 'Nexa', fontWeight: FontWeight.normal);
   static final TextStyle _headLine5 = _headLine4.copyWith();
   static final TextStyle _headLine6 =
       _headLine5.copyWith(fontFamily: 'Akrobat');

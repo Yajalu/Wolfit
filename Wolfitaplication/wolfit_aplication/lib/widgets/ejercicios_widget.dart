@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:wolfit_aplication/models/ejercicios_model.dart';
 import 'package:wolfit_aplication/services/ejercicios_service.dart';
@@ -7,7 +5,7 @@ import 'package:wolfit_aplication/widgets/ejercicios_card.dart';
 
 
 class EjerciciosWidget extends StatefulWidget {
-  EjerciciosWidget({Key? key}) : super(key: key);
+  const EjerciciosWidget({Key? key}) : super(key: key);
 
   @override
   _EjerciciosWidgetState createState() => _EjerciciosWidgetState();
@@ -23,6 +21,7 @@ List<Ejercicios>? _listejercicio;
     super.initState();
     _downloadejercicios();
   }
+  @override
   Widget build(BuildContext context) {
     return _listejercicio == null
         ? const Center(
@@ -41,7 +40,9 @@ List<Ejercicios>? _listejercicio;
 
 _downloadejercicios() async {
     _listejercicio = await _ejerciciosservice.getEjercicios();
-    setState(() {});
+    if(mounted){
+      setState(() {});
+    } 
   }
 
 }

@@ -23,8 +23,8 @@ List<MenuItem> menuOption = [
 
 
 List<Widget> contentWidgets = [
-  PlanWidget(),
-  EjerciciosWidget(),
-  InformacionWidget(),
-  NutricionWidget()
+  const PlanWidget(),
+  const EjerciciosWidget(),
+  const InformacionWidget(),
+  const NutricionWidget()
 ];

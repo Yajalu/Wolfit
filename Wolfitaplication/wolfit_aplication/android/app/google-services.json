@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "12539546060",
+    "project_id": "wolfit-9548f",
+    "storage_bucket": "wolfit-9548f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12539546060:android:a18a1505f9ac5f4e4d3569",
+        "android_client_info": {
+          "package_name": "com.example.wolfit_aplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12539546060-k79buejec0lvgmdtornueqdkgsaqbdjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOzqIMlsV2HLRyTuyMMu48CVQClIimenY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12539546060-k79buejec0lvgmdtornueqdkgsaqbdjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

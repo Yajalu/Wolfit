@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -5,10 +6,9 @@ import 'package:wolfit_aplication/pages/home_page.dart';
 import 'package:wolfit_aplication/providers/main_provider.dart';
 import 'package:wolfit_aplication/theme/main_theme.dart';
 
-
-
-
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(
     MultiProvider(
       providers: [
@@ -33,9 +33,9 @@ class MyApp extends StatelessWidget {
                 designSize: const Size(300, 600),
                 builder: () => MaterialApp(
                     debugShowCheckedModeBanner: false,
-                    title: 'Flutter Demo',
+                    title: 'WOLFIT',
                     theme: AppTheme.themeData(mainProvider.mode),
-                    home:  HomePage()));
+                    home:  const HomePage()));
           }
           return const SizedBox.square(
               dimension: 25.0, child: CircularProgressIndicator());

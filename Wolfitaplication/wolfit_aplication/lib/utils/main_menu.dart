@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:wolfit_aplication/widgets/ejercicios_widget.dart';
 import 'package:wolfit_aplication/widgets/informacion_widget.dart';
+import 'package:wolfit_aplication/widgets/listar_recetas.dart';
 import 'package:wolfit_aplication/widgets/plan_widget.dart';
-import 'package:wolfit_aplication/widgets/nutricion_widget.dart';
 
 class MenuItem{
   String label;
@@ -26,5 +26,5 @@ List<Widget> contentWidgets = [
   const PlanWidget(),
   const EjerciciosWidget(),
   const InformacionWidget(),
-  const NutricionWidget()
+  const listareceta()
 ];
